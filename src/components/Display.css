@@ -1,0 +1,67 @@
+/* Grid layout for images */
+.image-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 20px;
+  justify-content: center;
+}
+
+/* Individual image container */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for image */
+.image-item {
+  max-width: 100%;
+  max-height: 350px;
+  border-radius: 5px;
+  object-fit: cover; /* Ensures proper scaling without distortion */
+}
+
+/* Input box */
+.address {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.address:focus {
+  background-color: #eaf4ff;
+}
+
+/* Button styling */
+.button {
+  background-image: linear-gradient(-180deg, #009ffd, #2a2a72);
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+}
+
+.button:hover {
+  box-shadow: 0px 4px 8px rgba(253, 76, 0, 0.5);
+}
+
+/* Text for when no images are available */
+.no-images {
+  color: #888;
+  text-align: center;
+  font-size: 16px;
+}
